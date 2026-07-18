@@ -209,18 +209,21 @@ export const entities: Entity[] = [
 
 export const getEntity = (slug: string) => entities.find((e) => e.slug === slug);
 
-export const walletPlaceholder = "xxxxxxxxxxxxxxxxxxxxxxxx";
+export const BTCw = "bc1q0c7mj32qyr0hj0m5a7qw6g9ygjrqyaf0mg7jr0";
+export const ETHw = "0x795A25F8F03b3DBD4B431Fa48c549086E4985773";
+export const SOLw = "H8ekCCpCq5X7ajt9VdvfTGtZjVaVHihfYNcP3iavrHJ8";
+export const XRPw = "raftFpN3C2xHgpLokUmVbjMZLZqzFoHVz2";
 
 export const wallets = {
-  BTC: walletPlaceholder,
-  ETH: walletPlaceholder,
-  SOL: walletPlaceholder,
-  XRP: walletPlaceholder,
+  BTC: BTCw,
+  ETH: ETHw,
+  SOL: SOLw,
+  XRP: XRPw,
 };
 
 export const cryptoRails = [
-  { key: "BTC", label: "Bitcoin", ticker: "BTC" },
-  { key: "ETH", label: "Ethereum", ticker: "ETH" },
-  { key: "SOL", label: "Solana", ticker: "SOL" },
-  { key: "XRP", label: "XRP", ticker: "XRP" },
+  { key: "BTC", label: "Bitcoin", ticker: "BTCw" },
+  { key: "ETH", label: "Ethereum", ticker: "ETHw" },
+  { key: "SOL", label: "Solana", ticker: "SOLw" },
+  { key: "XRP", label: "XRP", ticker: "XRPw" },
 ] as const;
